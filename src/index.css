@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-blue-50: #f0f7ff;
+  --color-brand-blue-100: #e0effe;
+  --color-brand-blue-200: #bae0fd;
+  --color-brand-blue-500: #0284c7;
+  --color-brand-blue-600: #0369a1;
+  --color-brand-blue-700: #1d4ed8;
+  --color-brand-blue-900: #1e3a8a;
+  --color-brand-blue-950: #0f172a;
+
+  --color-electric-orange-500: #f97316;
+  --color-electric-orange-600: #ea580c;
+  --color-electric-orange-700: #c2410c;
+  
+  --color-copper-500: #d97706;
+  --color-copper-600: #b45309;
+}
+
+@layer utilities {
+  /* High-Tech Industrial Grid Backgrounds */
+  .tech-blueprint-grid {
+    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(2, 132, 199, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(2, 132, 199, 0.05) 1px, transparent 1px);
+  }
+  
+  .tech-dotted-grid {
+    background-size: 16px 16px;
+    background-image: radial-gradient(circle, rgba(148, 163, 184, 0.15) 1.5px, transparent 1.5px);
+  }
+
+  .tech-blueprint-diagonal {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(45deg, rgba(2, 132, 199, 0.015) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(2, 132, 199, 0.015) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(2, 132, 199, 0.015) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(2, 132, 199, 0.015) 75%);
+  }
+
+  .tech-panel-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(2, 132, 199, 0.12);
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06);
+  }
+}
+
+/* Custom glowing pulse for active circuits */
+@keyframes wireWave {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-wire-flow {
+  stroke-dasharray: 8 4;
+  animation: wireWave 6s infinite linear;
+}
+
+/* Base style resets and scroll behavior */
+html {
+  scroll-behavior: smooth;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Technical Blueprint scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
