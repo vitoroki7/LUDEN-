@@ -2,15 +2,17 @@ import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { ServiceItem } from "../types";
+import { Language } from "../translations";
 
 interface ServiceCardProps {
   key?: string | number;
   service: ServiceItem;
   index: number;
   onOpenDetails: (service: ServiceItem) => void;
+  lang: Language;
 }
 
-export default function ServiceCard({ service, index, onOpenDetails }: ServiceCardProps) {
+export default function ServiceCard({ service, index, onOpenDetails, lang }: ServiceCardProps) {
   // Use pre-assigned Unsplash images fallback
   const fallbackImage = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80";
   const imageUrl = service.image || fallbackImage;
@@ -52,19 +54,39 @@ export default function ServiceCard({ service, index, onOpenDetails }: ServiceCa
         </div>
 
         {/* 3. Interactive Call-To-Action Button */}
-        <motion.button
-          whileTap={{ scale: 0.98 }}
-          onClick={() => onOpenDetails(service)}
-          className="mt-6 w-full py-2.5 px-4 rounded-sm border border-slate-200 bg-slate-50 group-hover:bg-brand-blue-600 group-hover:border-transparent text-[10px] font-mono font-bold uppercase tracking-wider text-slate-700 group-hover:text-white flex items-center justify-between transition-all duration-300 cursor-pointer"
-          id={`service-btn-${service.id}`}
-        >
-          <span>
-            {service.id === "cable-trunking" || service.id === "panel-termination"
-              ? "Ver Detalhes Técnicos"
-              : "Solicitar Consulta"}
-          </span>
-          <ArrowRight size={12} className="transform group-hover:translate-x-1 transition-transform duration-300 text-slate-400 group-hover:text-white" />
-        </motion.button>
+        {(() => {
+          const btnLabel = {
+            pt: {
+              details: "Ver Detalhes Técnicos",
+              consult: "Solicitar Consulta",
+            },
+            ja: {
+              details: "技術要件を見る",
+              consult: "お問合せ・相談",
+            },
+            es: {
+              details: "Ver Detalles Técnicos",
+              consult: "Solicitar Consulta",
+            },
+          }[lang] || {
+            details: "Ver Detalhes Técnicos",
+            consult: "Solicitar Consulta",
+          };
+
+          const label = service.id === "cable-trunking" || service.id === "panel-termination" ? btnLabel.details : btnLabel.consult;
+
+          return (
+            <motion.button
+              whileTap={{ scale: 0.98 }}
+              onClick={() => onOpenDetails(service)}
+              className="mt-6 w-full py-2.5 px-4 rounded-sm border border-slate-200 bg-slate-50 group-hover:bg-brand-blue-600 group-hover:border-transparent text-[10px] font-mono font-bold uppercase tracking-wider text-slate-700 group-hover:text-white flex items-center justify-between transition-all duration-300 cursor-pointer"
+              id={`service-btn-${service.id}`}
+            >
+              <span>{label}</span>
+              <ArrowRight size={12} className="transform group-hover:translate-x-1 transition-transform duration-300 text-slate-400 group-hover:text-white" />
+            </motion.button>
+          );
+        })()}
       </div>
     </motion.div>
   );

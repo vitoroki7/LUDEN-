@@ -66,8 +66,8 @@ export default function ContactForm({ lang }: ContactFormProps) {
                 </div>
                 <div>
                   <p className="font-sans text-[10px] text-slate-400 uppercase tracking-wider font-bold">{t.hotline}</p>
-                  <a href="tel:+819083449642" className="block font-display font-bold text-sm md:text-base text-slate-900 mt-1 tracking-tight hover:text-amber-600 transition-colors cursor-pointer select-all no-underline">
-                    +81 90-8344-9642
+                  <a href="tel:05068613659" className="block font-display font-bold text-sm md:text-base text-slate-900 mt-1 tracking-tight hover:text-amber-600 transition-colors cursor-pointer select-all no-underline">
+                    050-6861-3659
                   </a>
                 </div>
               </div>
@@ -79,9 +79,9 @@ export default function ContactForm({ lang }: ContactFormProps) {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="font-sans text-[10px] text-slate-400 uppercase tracking-wider font-bold">{t.division}</p>
-                  <p className="font-display font-bold text-xs md:text-sm text-slate-900 mt-1 tracking-tight truncate hover:text-amber-600 transition-colors cursor-pointer select-all">
-                    vitoroki7@gmail.com
-                  </p>
+                  <a href="mailto:luismatsuoka@luden-ele.com" className="block font-display font-bold text-xs md:text-sm text-slate-900 mt-1 tracking-tight truncate hover:text-amber-600 transition-colors cursor-pointer select-all no-underline">
+                    luismatsuoka@luden-ele.com
+                  </a>
                 </div>
               </div>
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { ArrowDown, Award, Sparkles, Phone, Mail, MapPin, ExternalLink, HelpCircle } from "lucide-react";
+import { ArrowDown, Award, Sparkles, Phone, Mail, MapPin, ExternalLink, HelpCircle, Instagram } from "lucide-react";
 import LudenLogo from "./components/LudenLogo";
 import ServiceCard from "./components/ServiceCard";
 import DifferenceSection from "./components/DifferenceSection";
@@ -57,7 +57,7 @@ export default function App() {
               <span className="font-display font-black tracking-[0.25em] text-white group-hover:text-amber-400 transition-colors text-base">
                 LUDEN
               </span>
-              <span className="text-[8.5px] font-mono tracking-widest text-slate-400 font-bold mt-1">YOKOHAMA</span>
+              <span className="text-[8.5px] font-mono tracking-widest text-slate-400 font-bold mt-1">TOKYO</span>
             </div>
           </button>
 
@@ -89,9 +89,32 @@ export default function App() {
             </button>
           </div>
 
-          {/* Extreme Right: WhatsApp and Language Controls */}
+          {/* Extreme Right: WhatsApp, Social and Language Controls */}
           <div className="flex items-center gap-4">
             
+            {/* Social Links */}
+            <div className="hidden sm:flex items-center gap-2">
+              <a
+                href="https://www.instagram.com/luden_denki?igsh=NjJta3Ezc3pzeWE2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors duration-200 p-1 cursor-pointer flex items-center justify-center rounded hover:bg-slate-900"
+                title="Instagram"
+              >
+                <Instagram size={15} />
+              </a>
+              <a
+                href="https://tsukulink.net/tokyo/city_131032/828764"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[9px] font-mono font-bold text-slate-400 hover:text-white transition-colors duration-200 px-1.5 py-1 cursor-pointer flex items-center gap-1 rounded hover:bg-slate-900 border border-slate-800"
+                title="Tsukulink"
+              >
+                <span>TSUKULINK</span>
+                <ExternalLink size={10} />
+              </a>
+            </div>
+
             {/* Integrated Language Switcher: ES, 日本語, PT */}
             <div className="flex items-center gap-1 bg-slate-900 border border-slate-800 p-0.5 rounded">
               {([
@@ -265,6 +288,7 @@ export default function App() {
                 service={service}
                 index={idx}
                 onOpenDetails={handleOpenDetails}
+                lang={lang}
               />
             ))}
           </div>
@@ -297,14 +321,14 @@ export default function App() {
 
                 <img
                   src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=800&q=80"
-                  alt="Vitor - Eletricista de Confiança no Japão"
+                  alt="Luis Matsuoka - 代表取締役"
                   referrerPolicy="no-referrer"
                   className="w-full h-80 object-cover grayscale-10 hover:grayscale-0 transition-all duration-500 rounded-sm"
                 />
                 
                 <div className="mt-4 flex items-center justify-between text-[11px] font-mono text-slate-500 font-bold uppercase">
                   <span>SCALE: 1:1 ACTIVE</span>
-                  <span>VITOR ・ OWNER</span>
+                  <span>LUIS MATSUOKA ・ REPRESENTATIVE</span>
                 </div>
               </motion.div>
             </div>
@@ -370,12 +394,34 @@ export default function App() {
                 <span className="font-display font-black tracking-[0.25em] text-white text-lg">
                   LUDEN
                 </span>
-                <span className="text-[9px] font-mono tracking-widest text-[#94a3b8] font-bold mt-1">YOKOHAMA</span>
+                <span className="text-[9px] font-mono tracking-widest text-[#94a3b8] font-bold mt-1">TOKYO</span>
               </div>
             </div>
             <p className="font-sans text-[11px] text-slate-500 leading-relaxed font-light max-w-sm">
               {t.footer.compliance}
             </p>
+            {/* Social Links Footer */}
+            <div className="flex items-center gap-3 pt-2">
+              <a
+                href="https://www.instagram.com/luden_denki?igsh=NjJta3Ezc3pzeWE2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-500 hover:text-white transition-colors p-1.5 bg-slate-900 rounded border border-slate-800 flex items-center justify-center cursor-pointer"
+                title="Instagram"
+              >
+                <Instagram size={16} />
+              </a>
+              <a
+                href="https://tsukulink.net/tokyo/city_131032/828764"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[9px] font-mono font-bold text-slate-500 hover:text-white transition-colors px-2 py-1.5 bg-slate-900 rounded border border-slate-800 flex items-center gap-1 cursor-pointer"
+                title="Tsukulink"
+              >
+                <span>TSUKULINK</span>
+                <ExternalLink size={10} />
+              </a>
+            </div>
           </div>
 
           {/* Contact Details Column */}
@@ -386,11 +432,11 @@ export default function App() {
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <Phone size={13} className="text-amber-400" />
-                <a href="tel:+819083449642" className="hover:text-amber-400 transition-colors cursor-pointer font-bold select-all text-slate-400 no-underline">+81 90-8344-9642</a>
+                <a href="tel:05068613659" className="hover:text-amber-400 transition-colors cursor-pointer font-bold select-all text-slate-400 no-underline">050-6861-3659</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={13} className="text-amber-400" />
-                <span className="hover:text-amber-400 transition-colors cursor-default font-light select-all">vitoroki7@gmail.com</span>
+                <a href="mailto:luismatsuoka@luden-ele.com" className="hover:text-amber-400 transition-colors cursor-pointer font-light select-all text-slate-400 no-underline">luismatsuoka@luden-ele.com</a>
               </div>
             </div>
           </div>
@@ -409,7 +455,7 @@ export default function App() {
               <button onClick={scrollToTop} className="text-left hover:underline transition-all cursor-pointer bg-transparent border-none p-0">
                 ↑ {t.footer.backToTop}
               </button>
-              <button onClick={() => alert("Política de Privacidade do site LUDEN: Seus dados estão completamente seguros e integrados em Yokohama.")} className="text-left hover:underline transition-all cursor-pointer bg-transparent border-none p-0">
+              <button onClick={() => alert(lang === "pt" ? "Política de Privacidade do site LUDEN: Seus dados estão completamente seguros." : lang === "ja" ? "プライバシーポリシー：お客様の個人情報は安全に管理されています。" : "Política de Privacidad de LUDEN: Sus datos están completamente seguros.")} className="text-left hover:underline transition-all cursor-pointer bg-transparent border-none p-0">
                 🔒 {t.footer.privacy}
               </button>
             </div>
@@ -420,7 +466,7 @@ export default function App() {
         {/* Legal copyright watermark */}
         <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-900 flex justify-between items-center text-[10px] font-mono text-slate-600">
           <span>{t.footer.rights}</span>
-          <span className="hidden sm:inline">MADE IN NIPPA, YOKOHAMA ・ DESIGNED FOR VITOR</span>
+          <span className="hidden sm:inline">MADE IN KAIGAN, TOKYO ・ REPRESENTATIVE: LUIS MATSUOKA</span>
         </div>
       </footer>
 
