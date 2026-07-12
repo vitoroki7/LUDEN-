@@ -196,7 +196,7 @@ export const translations: Record<Language, TranslationSchema> = {
       placeholderName: "Ejemplo: Luis Matsuoka",
       labelEmail: "Correo Electrónico",
       placeholderEmail: "Ejemplo: contacto@luden-ele.com",
-      labelMessage: "Detalles del Proyecto y Servicios Solicitados",
+      labelMessage: "Detalles del Proyecto y Serviços Solicitados",
       placeholderMessage: "Describa la instalación o renovación que necesita (ej. bandejas portacables, actualización de tableros de disyuntores, tendido de cables principales, remodelación de oficinas, etc.)...",
       transmitting: "Transmitiendo a Luis Matsuoka...",
       transmitButton: "Enviar Solicitud de Presupuesto",
@@ -217,8 +217,8 @@ export const translations: Record<Language, TranslationSchema> = {
       successDesc: "Luis Matsuoka lo llamará directamente en breve para responder a sus preguntas técnicas.",
     },
     footer: {
-      rights: "© 2026 LUDEN Co., Ltd. Todos os derechos reservados.",
-      compliance: "Corporación Eléctrica Registrada en Japón • Licencia T7010401165137",
+      rights: "© 2026 LUDEN Co., Ltd. Todos los derechos reservados.",
+      compliance: "Compañía Eléctrica Registrada en Japón • Licencia T7010401165137",
       backToTop: "Volver al inicio",
       privacy: "Política de Privacidad",
       contactInfo: "Información de Contacto",
@@ -311,7 +311,7 @@ export const translations: Record<Language, TranslationSchema> = {
     modal: {
       engineeringTitle: "LUDEN電気工事・高基準仕様",
       descriptionLabel: "本施工技術の概要:",
-      descriptionText: "将来の経年劣化を見据えた耐久設計。厳選された純銅線材、防湿・耐食に優れた合成樹脂および金属電線管、そして端子台への一糸乱れぬトルク接続により、完璧な電力品質と絶対的な安心を提供します。",
+      descriptionText: "将来の経年劣化を見据えた耐久設計。厳選された純銅線材、防湿・耐食に優れた合成樹脂および金属電線管、 office_interior.png、そして端子台への一糸乱れぬトルク接続により、完璧な電力品質と絶対的な安心を提供します。",
       scopeLabel: "標準に含まれる施工要件:",
       callbackLabel: "技術的な質問や工程確認等、代表の松岡ルイスからの折り返し電話をご希望ですか？:",
       phonePlaceholder: "例: 050-6861-3659",
@@ -396,7 +396,7 @@ export const translations: Record<Language, TranslationSchema> = {
       consultation: "Área de Cobertura Principal",
       consultationDesc: "Tóquio (sede em Minato-ku) e toda a província de Kanagawa (incluindo Yokohama e Kawasaki).",
       nodeNetwork: "REDE LUDEN",
-      infrastructureActive: "LICENÇA CORPORATIVA ATIVA",
+      infrastructureActive: "LICENÇA CORPORATIVA ACTIVA",
       operationsHQ: "Minato-ku, Tóquio",
       reliability: "QUALIDADE DE CONEXÃO: 100% DISPONÍVEL",
       aesEngaged: "CANAL ENCRIPTADO DE CONTATO",
@@ -534,7 +534,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     },
     {
       id: "device-installation",
-      title: "Instalação de Equipamentos (器具の取り付け)",
+      title: "Instalação de Equipamentos (器具 de 取り付け)",
       description: "Fase de acabamento técnico. Realizamos a conexão final e fixação milimétrica de luminárias, tomadas e interruptores após o revestimento das paredes. Também executamos a remoção segura de equipamentos em reformas de escritórios e lojas.",
       image: "device_installation.png"
     },
@@ -557,104 +557,103 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
   es: [
     {
       id: "proj-1",
-      title: "Condominios y Residencias de Lujo",
-      category: "Apartamentos",
+      title: "Instalación Externa de Prumadas",
+      category: "Infraestructura",
       location: "Tokio / Minato-ku",
-      description: "Instalación de luminarias de diseño, cableado interno sofisticado y colocación de placas y apagadores premium.",
-      image: "mansion_wiring.png"
+      description: "Uso de plataforma elevadora para tendido de cableado exterior de alta tensión.",
+      image: "work_1.jpg"
     },
     {
       id: "proj-2",
-      title: "Infraestructura Eléctrica de Fábricas",
-      category: "Industrial",
-      location: "Kawasaki / Kanagawa",
-      description: "Montaje de canalizaciones metálicas (eletrocalhas) y tendido de cableado principal de alta capacidad.",
-      image: "industrial_main.png"
+      title: "Tableros de Bomberos y Alarmas",
+      category: "Sistemas",
+      location: "Yokohama / Kanagawa",
+      description: "Conexión técnica del tablero principal de bombas contra incendios de emergencia.",
+      image: "work_2.png"
     },
     {
       id: "proj-3",
-      title: "Reformas de Oficinas y Tiendas",
-      category: "Comercial",
-      location: "Shibuya / Tokio",
-      description: "Adecuación eléctrica de locales comerciales, iluminación decorativa LED y cableado de tomas de piso.",
-      image: "office_interior.png"
+      title: "Iluminación Vial y de Áreas Comunes",
+      category: "Iluminación",
+      location: "Kawasaki / Kanagawa",
+      description: "Mantenimiento y colocación de reflectores y luminarias públicas LED en altura.",
+      image: "work_3.jpg"
     },
     {
       id: "proj-4",
-      title: "Montaje de Tableros de Distribución",
-      category: "Distribución",
-      location: "Yokohama / Kanagawa",
-      description: "Conexión técnica de disyuntores, organización y torqueado de líneas de fuerza principales y secundarias.",
-      image: "distribution_board.png"
+      title: "Canalizaciones Metálicas e Infraestructura",
+      category: "Infraestructura",
+      location: "Shibuya / Tokio",
+      description: "Paso de conductos corrugados metálicos flexibles y fijación de soportes en drywall.",
+      image: "work_4.png"
     }
   ],
   ja: [
     {
       id: "proj-1",
-      title: "高級マンション電気工事",
-      category: "マンション",
+      title: "高所作業車幹線配線工事",
+      category: "インフラ",
       location: "東京都港区",
-      description: "デザイン照明の取付け、壁内二重壁配線および高級スイッチプレート設置施工。",
-      image: "mansion_wiring.png"
+      description: "高所作業用リフトを使用した外部幹線および引込配線の敷設整備。",
+      image: "work_1.jpg"
     },
     {
       id: "proj-2",
-      title: "工場内幹線配線・インフラ構築",
-      category: "工業用",
-      location: "神奈川県川崎市",
-      description: "スチール製電線管・高耐荷重ケーブルラックの敷設および大口径幹線引き込み配線施工。",
-      image: "industrial_main.png"
+      title: "消火ポンプ・消火用結線盤",
+      category: "防災設備",
+      location: "神奈川県横浜市",
+      description: "非常用消火ポンプの電力制御盤の結線、圧着端子締結・安全点検。",
+      image: "work_2.png"
     },
     {
       id: "proj-3",
-      title: "店舗・テナントオフィス改装",
-      category: "店舗・テナント",
-      location: "東京都渋谷区",
-      description: "調光LEDシステムの配置、床用OAコンセントおよびサーバー室増設工事。",
-      image: "office_interior.png"
+      title: "高所街路灯LED化整備",
+      category: "屋外照明",
+      location: "神奈川県川崎市",
+      description: "高所作業車を活用した屋外街路灯の改修およびLED照明器具交換工事。",
+      image: "work_3.jpg"
     },
     {
       id: "proj-4",
-      title: "受配電盤・分電盤結線",
-      category: "電力配電",
-      location: "神奈川県横浜市",
-      description: "サーキットブレーカーの取付、端子台ネジ締め規定トルク管理およびルート整理。",
-      image: "distribution_board.png"
+      title: "フレーム内二重壁金属配管",
+      category: "配管インフラ",
+      location: "東京都渋谷区",
+      description: "間仕切りフレーム内におけるフレキシブル金属電線管の敷設および接続。",
+      image: "work_4.png"
     }
   ],
   pt: [
     {
       id: "proj-1",
-      title: "Condomínios e Mansões de Luxo",
-      category: "Apartamentos",
+      title: "Instalação Externa de Prumadas",
+      category: "Infraestrutura",
       location: "Tóquio / Minato-ku",
-      description: "Instalação de projetos de iluminação sofisticada, fiação interna e acabamentos refinados de interruptores.",
-      image: "mansion_wiring.png"
+      description: "Uso de plataforma elevatória para fiação externa e prumadas de alta capacidade.",
+      image: "work_1.jpg"
     },
     {
       id: "proj-2",
-      title: "Infraestrutura Elétrica de Fábricas",
-      category: "Industrial",
-      location: "Kawasaki / Kanagawa",
-      description: "Montagem de bandejas metálicas suspensas e lançamento de cabos principais de força.",
-      image: "industrial_main.png"
+      title: "Fechamento de Quadro de Hidrantes",
+      category: "Sistemas",
+      location: "Yokohama / Kanagawa",
+      description: "Conexão de quadro elétrico principal de bombas de hidrantes e alarmes.",
+      image: "work_2.png"
     },
     {
       id: "proj-3",
-      title: "Reformas de Escritórios e Lojas",
-      category: "Comercial",
-      location: "Shibuya / Tóquio",
-      description: "Instalação de fitas LED de design, infraestrutura de alimentação de piso e reformas comerciais de inquilinos.",
-      image: "office_interior.png"
+      title: "Manutenção de Iluminação Pública",
+      category: "Iluminação",
+      location: "Kawasaki / Kanagawa",
+      description: "Substituição e instalação de novas luminárias de LED públicas externas em altura.",
+      image: "work_3.jpg"
     },
     {
       id: "proj-4",
-      title: "Montagem de Quadros de Distribuição",
-      category: "Distribuição",
-      location: "Yokohama / Kanagawa",
-      description: "Conexão de disjuntores elétricos, organização e identificação de cabos de força.",
-      image: "distribution_board.png"
+      title: "Tubulações Metálicas em Drywall",
+      category: "Infraestrutura",
+      location: "Shibuya / Tóquio",
+      description: "Passagem de conduítes metálicos flexíveis e fixação de suportes metálicos.",
+      image: "work_4.png"
     }
   ]
 };
-
