@@ -176,7 +176,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     about: {
       title: "Sobre Nosotros",
-      text: "LUDEN Co., Ltd. (representada por Luis Matsuoka) es una empresa de ingeniería eléctrica con sede en Minato-ku, Tokio. Nos especializamos en el diseño, instalación y mantenimiento de infraestructura eléctrica para condominios (apartamentos), fábricas y locales comerciales (inquilinos), además de obras de interiores. Nos comprometemos a entregar soluciones de alta fidelidad que garanticen la máxima seguridad, eficiencia energética y durabilidad de las instalaciones.",
+      text: "LUDEN Co., Ltd. (representada por Luis Matsuoka) es una empresa de ingeniería eléctrica con sede en Minato-ku, Tokio. Nos especializamos en el diseño, instalación y mantenimiento de infraestructura eléctrica para condominios (apartamentos), fábricas y locales comerciales (inquilinos), además de obras de interiores. Nos comprometemos a entregar solutions de alta fidelidad que garanticen la máxima seguridad, eficiencia energética y durabilidad de las instalaciones.",
       tagline: "LUDEN INGENIERÍA • SOPORTE MULTILINGÜE DISPONIBLE EN PORTUGUÉS, JAPONÉS Y ESPAÑOL",
     },
     contact: {
@@ -196,7 +196,7 @@ export const translations: Record<Language, TranslationSchema> = {
       placeholderName: "Ejemplo: Luis Matsuoka",
       labelEmail: "Correo Electrónico",
       placeholderEmail: "Ejemplo: contacto@luden-ele.com",
-      labelMessage: "Detalles del Proyecto y Serviços Solicitados",
+      labelMessage: "Detalles del Proyecto y Servicios Solicitados",
       placeholderMessage: "Describa la instalación o renovación que necesita (ej. bandejas portacables, actualización de tableros de disyuntores, tendido de cables principales, remodelación de oficinas, etc.)...",
       transmitting: "Transmitiendo a Luis Matsuoka...",
       transmitButton: "Enviar Solicitud de Presupuesto",
@@ -311,7 +311,7 @@ export const translations: Record<Language, TranslationSchema> = {
     modal: {
       engineeringTitle: "LUDEN電気工事・高基準仕様",
       descriptionLabel: "本施工技術の概要:",
-      descriptionText: "将来の経年劣化を見据えた耐久設計。厳選された純銅線材、防湿・耐食に優れた合成樹脂および金属電線管、 office_interior.png、そして端子台への一糸乱れぬトルク接続により、完璧な電力品質と絶対的な安心を提供します。",
+      descriptionText: "将来の経年劣化を見据えた耐久設計。厳選された純銅線材、防湿・耐食に優れた合成樹脂および金属電線管、そして端子台への一糸乱れぬトルク接続により、完璧な電力品質と絶対的な安心を提供します。",
       scopeLabel: "標準に含まれる施工要件:",
       callbackLabel: "技術的な質問や工程確認等、代表の松岡ルイスからの折り返し電話をご希望ですか？:",
       phonePlaceholder: "例: 050-6861-3659",
@@ -534,7 +534,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     },
     {
       id: "device-installation",
-      title: "Instalação de Equipamentos (器具 de 取り付け)",
+      title: "Instalação de Equipamentos (器具の取り付け)",
       description: "Fase de acabamento técnico. Realizamos a conexão final e fixação milimétrica de luminárias, tomadas e interruptores após o revestimento das paredes. Também executamos a remoção segura de equipamentos em reformas de escritórios e lojas.",
       image: "device_installation.png"
     },
@@ -586,6 +586,22 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
       location: "Shibuya / Tokio",
       description: "Paso de conductos corrugados metálicos flexibles y fijación de soportes en drywall.",
       image: "work_4.png"
+    },
+    {
+      id: "proj-5",
+      title: "Infraestructura Industrial de Cableado",
+      category: "Industrial",
+      location: "Kawasaki / Kanagawa",
+      description: "Montaje de canalizaciones metálicas y tendido de cableado principal.",
+      image: "work_5.png"
+    },
+    {
+      id: "proj-6",
+      title: "Instalación de Dispositivos de Diseño",
+      category: "Comercial",
+      location: "Tokio / Minato-ku",
+      description: "Instalación y conexión de placas de apagadores y enchufes.",
+      image: "work_6.png"
     }
   ],
   ja: [
@@ -620,6 +636,22 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
       location: "東京都渋谷区",
       description: "間仕切りフレーム内におけるフレキシブル金属電線管の敷設および接続。",
       image: "work_4.png"
+    },
+    {
+      id: "proj-5",
+      title: "工場内動力幹線設備",
+      category: "工業用",
+      location: "神奈川県川崎市",
+      description: "高耐荷重ケーブルラックの組み立てと配管・配線。",
+      image: "work_5.png"
+    },
+    {
+      id: "proj-6",
+      title: "コンクリート・スイッチ器具設置",
+      category: "店舗・テナント",
+      location: "東京都港区",
+      description: "デザインスイッチおよび高機能コンセントの精密取付け。",
+      image: "work_6.png"
     }
   ],
   pt: [
@@ -654,6 +686,22 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
       location: "Shibuya / Tóquio",
       description: "Passagem de conduítes metálicos flexíveis e fixação de suportes metálicos.",
       image: "work_4.png"
+    },
+    {
+      id: "proj-5",
+      title: "Infraestrutura Industrial de Cabos",
+      category: "Industrial",
+      location: "Kawasaki / Kanagawa",
+      description: "Montagem de eletrocalhas industriais e lançamento de cabos.",
+      image: "work_5.png"
+    },
+    {
+      id: "proj-6",
+      title: "Instalação de Tomadas e Interruptores",
+      category: "Comercial",
+      location: "Tóquio / Minato-ku",
+      description: "Acabamento elétrico fino de tomadas de design.",
+      image: "work_6.png"
     }
   ]
 };
