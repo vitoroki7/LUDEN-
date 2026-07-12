@@ -404,10 +404,10 @@ export default function App() {
                 <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-slate-300 -ml-0.5 -mb-0.5" />
 
                 <img
-                  src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=800&q=80"
+                  src="owner.jpg"
                   alt="Luis Matsuoka - 代表取締役"
                   referrerPolicy="no-referrer"
-                  className="w-full h-80 object-cover grayscale-10 hover:grayscale-0 transition-all duration-500 rounded-sm"
+                  className="w-full h-96 object-cover transition-all duration-550 rounded-sm"
                 />
                 
                 <div className="mt-4 flex items-center justify-between text-[11px] font-mono text-slate-500 font-bold uppercase">
