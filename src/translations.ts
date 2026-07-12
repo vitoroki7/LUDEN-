@@ -140,7 +140,7 @@ export const translations: Record<Language, TranslationSchema> = {
       title: "¿Por qué elegir a LUDEN?",
       subtitle: "ESTÁNDARES RIGUROSOS • RESPONSABILIDAD CORPORATIVA TOTAL EN JAPÓN",
       col1Title: "Corporación Registrada",
-      col1Text: "LUDEN Co., Ltd. es una empresa legalmente registrada en Japón (N° T7010401165137), lo que garantiza una total responsabilidad de ingeniería, emisión de facturas comerciales e impositivas (Invoice) y estricto cumplimiento de los códigos de seguridad.",
+      col1Text: "LUDEN Co., Ltd. es una empresa legalmente registrada en Japón (N° T7010401165137), lo que garantiza total responsabilidad técnica, emisión de facturas comerciales y fiscales (sistema Invoice) y un estricto cumplimiento de los códigos de seguridad.",
       col2Title: "Sede en Minato-ku, Tokio",
       col2Text: "Con sede en Kaigan, Minato-ku, lo que nos permite un despliegue ágil, tiempos de respuesta rápidos y visitas técnicas prioritarias en toda el área metropolitana de Tokio y la prefectura de Kanagawa.",
       col3Title: "Transparencia del 100%",
@@ -154,7 +154,7 @@ export const translations: Record<Language, TranslationSchema> = {
     about: {
       title: "Sobre Nosotros",
       text: "LUDEN Co., Ltd. (representada por Luis Matsuoka) es una empresa de ingeniería eléctrica con sede en Minato-ku, Tokio. Nos especializamos en el diseño, instalación y mantenimiento de infraestructura eléctrica para condominios (apartamentos), fábricas y locales comerciales (inquilinos), además de obras de interiores. Nos comprometemos a entregar soluciones de alta fidelidad que garanticen la máxima seguridad, eficiencia energética y durabilidad de las instalaciones.",
-      tagline: "LUDEN INGENIERÍA • SOPORTE MULTILÍNGUE DISPONIBLE EN PORTUGUÉS, JAPONÉS Y ESPAÑOL",
+      tagline: "LUDEN INGENIERÍA • SOPORTE MULTILINGÜE DISPONIBLE EN PORTUGUÉS, JAPONÉS Y ESPAÑOL",
     },
     contact: {
       titleStart: "Solicite su",
@@ -174,7 +174,7 @@ export const translations: Record<Language, TranslationSchema> = {
       labelEmail: "Correo Electrónico",
       placeholderEmail: "Ejemplo: contacto@luden-ele.com",
       labelMessage: "Detalles del Proyecto y Servicios Solicitados",
-      placeholderMessage: "Describa la instalación o renovación que necesita (ej. cableado de bandeja, actualización de tableros de disyuntores, tendido de cables principales, remodelación de oficinas, etc)...",
+      placeholderMessage: "Describa la instalación o renovación que necesita (ej. bandejas portacables, actualización de tableros de disyuntores, tendido de cables principales, remodelación de oficinas, etc.)...",
       transmitting: "Transmitiendo a Luis Matsuoka...",
       transmitButton: "Enviar Solicitud de Presupuesto",
       successTitle: "Solicitud de Presupuesto Registrada",
@@ -234,7 +234,7 @@ export const translations: Record<Language, TranslationSchema> = {
       scrollCue: "LUDEN施工技術 • 東京都港区海岸",
     },
     trust: {
-      title: "LUDENが選ばres 3つの理由",
+      title: "LUDENが選ばれる 3つの理由",
       subtitle: "確かな法人技術規格 • 東京・神奈川エリア完全責任施工",
       col1Title: "安心の法人組織",
       col1Text: "株式会社LUDENは、国税庁に登記済みの安心の法人組織です（登録番号: T7010401165137）。信頼の施工体制、適格請求書（インボイス）の発行、日本の電気安全法令に則った誠実な責任施工をお届けします。",
@@ -262,9 +262,9 @@ export const translations: Record<Language, TranslationSchema> = {
       consultation: "主な対応エリア",
       consultationDesc: "東京都（港区中心・都内全域）、神奈川県（横浜・川崎含む県内全域）。",
       nodeNetwork: "LUDEN 基地",
-      infrastructureActive: "有資格認証運転",
+      infrastructureActive: "有資格者による施工",
       operationsHQ: "東京都港区海岸",
-      reliability: "安定性管理: 100% 準拠安全",
+      reliability: "品質・安全基準: 100%適合",
       aesEngaged: "暗号化セキュアチャンネル接続",
       labelName: "お名前 (漢字・氏名)",
       placeholderName: "例: 山田 太郎",
@@ -292,7 +292,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     footer: {
       rights: "© 2026 株式会社LUDEN. All rights reserved.",
-      compliance: "登録電気工事業者・内線施工一級技能品質",
+      compliance: "登録電気工事業者・高品質施工",
       backToTop: "トップへ戻る",
       privacy: "プライバシーポリシー",
       contactInfo: "ご連絡先",
@@ -305,7 +305,7 @@ export const translations: Record<Language, TranslationSchema> = {
     menu: {
       home: "Início",
       services: "Serviços",
-      standard: "Sobre Nós",
+      standard: "Por Que Escolher-nos",
       about: "Sobre Nós",
       contact: "Contato",
       ctaButton: "Solicitar Orçamento",
@@ -332,11 +332,11 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     trust: {
       title: "Por que escolher a LUDEN?",
-      subtitle: "MÁXIMA RESPONSABILIDADE • ORGANIZAÇÃO CORPORATIVA E INTEGRAL",
+      subtitle: "MÁXIMA RESPONSABILIDADE • ORGANIZAÇÃO CORPORATIVA INTEGRAL",
       col1Title: "Corporação Registrada",
       col1Text: "A LUDEN Co., Ltd. é uma empresa de engenharia elétrica legalmente registrada no Japão (N° T7010401165137), garantindo responsabilidade técnica civil, emissão de notas fiscais comerciais e cumprimento de todas as leis elétricas nacionais.",
       col2Title: "Sede em Minato-ku, Tóquio",
-      col2Text: "Baseados em Kaigan, Minato-ku, oferecendo grande agilidade no deslocamento, vistorias técnicas prioritárias e visitas rápidas em toda a região de Tóquio e província de Kanagawa.",
+      col2Text: "Baseados em Kaigan, Minato-ku, oferecendo grande agilidade no deslocamento, vistorias técnicas pioneiras e visitas rápidas em toda a região de Tóquio e província de Kanagawa.",
       col3Title: "Transparência Total",
       col3Text: "Orçamentos claros e detalhados prévios para obras comerciais ou industriais. Você sabe exatamente o custo de cada etapa e serviço antes de qualquer instalação começar. Sem surpresas.",
     },
@@ -358,7 +358,7 @@ export const translations: Record<Language, TranslationSchema> = {
       division: "E-mail Corporativo",
       consultation: "Área de Cobertura Principal",
       consultationDesc: "Tóquio (sede em Minato-ku) e toda a província de Kanagawa (incluindo Yokohama e Kawasaki).",
-      nodeNetwork: "RED LUDEN",
+      nodeNetwork: "REDE LUDEN",
       infrastructureActive: "LICENÇA CORPORATIVA ATIVA",
       operationsHQ: "Minato-ku, Tóquio",
       reliability: "QUALIDADE DE CONEXÃO: 100% DISPONÍVEL",
@@ -368,7 +368,7 @@ export const translations: Record<Language, TranslationSchema> = {
       labelEmail: "E-mail Corporativo de Contato",
       placeholderEmail: "Ex: contato@luden-ele.com",
       labelMessage: "O que você precisa fazer no seu imóvel?",
-      placeholderMessage: "Descreva os detalhes do serviço (ex: passagem de cabos tronco, fechamento de quadro de força, tubulações em lajes, reforma de escritórios, infraestrutura para inquilinos, etc)...",
+      placeholderMessage: "Descreva os detalhes do serviço (ex: passagem de cabos tronco, fechamento de quadro de força, tubulações em lajes, reforma de escritórios, infraestrutura para inquilinos, etc.)...",
       transmitting: "Enviando seus detalhes para Luis Matsuoka...",
       transmitButton: "Enviar Solicitação de Orçamento",
       successTitle: "Solicitação Enviada com Sucesso!",
@@ -428,7 +428,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     {
       id: "panel-termination",
       title: "Paneles de Fuerza y Terminales (電力盤結線)",
-      description: "Estructuración, peinado y conexión de baja impedancia de alimentadores de distribución principal a tableros y disyuntores. Garantizando una disipación de calor limpia, pruebas de torque y balanceo de carga estructurado.",
+      description: "Estructuración, peinado y conexión de baja impedancia de alimentadores de distribución principal a tableros y disyuntores, garantizando una disipación de calor limpia, pruebas de torque y un balanceo de carga estructurado.",
       image: "https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -448,7 +448,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     {
       id: "concrete-slab",
       title: "コンクリートスラブ配管工事 (スラブ配管・配線)",
-      description: "マンション・戸建・倉庫の生コンクリート打設前の鉄筋組に、PF管やCD管などの埋込電線管を戦略的に配管・立ち上げ固定を行い、構造体一体の下地施工を頑強に実施します。",
+      description: "マンション・ビル・倉庫の生コンクリート打設前の鉄筋組に、PF管やCD管などの埋込電線管を戦略的に配管・立ち上げ固定を行い、構造体一体の下地施工を頑強に実施します。",
       image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -491,7 +491,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     },
     {
       id: "structural-wiring",
-      title: "Cabeamento e Fiação Estrutural (天井・壁 de 配線)",
+      title: "Cabeamento e Fiação Estrutural (天井・壁の配線)",
       description: "Passagem de fios em tetos e paredes na fase de obra (antes do fechamento com gesso/drywall). Trabalhamos com cabos de energia (VVF, CV) e também cabos de baixa tensão para alarmes de incêndio e sistemas de automação.",
       image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
     },
