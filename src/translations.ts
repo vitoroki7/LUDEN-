@@ -171,8 +171,8 @@ export const translations: Record<Language, TranslationSchema> = {
     portfolio: {
       titleStart: "Proyectos",
       titleHighlight: "Recientes",
-      subtitle: "INFRAESTRUCTURA ELÉCTRICA DE ALTO RENDIMIENTO CONSTRUIDA PARA DURAR",
-      badge: "GALERÍA DE TRABAJOS REALES",
+      subtitle: "GALERÍA DE TRABAJOS RECIENTES REALIZADOS POR LUDEN",
+      badge: "NUESTRAS OBRAS",
     },
     about: {
       title: "Sobre Nosotros",
@@ -217,7 +217,7 @@ export const translations: Record<Language, TranslationSchema> = {
       successDesc: "Luis Matsuoka lo llamará directamente en breve para responder a sus preguntas técnicas.",
     },
     footer: {
-      rights: "© 2026 LUDEN Co., Ltd. Todos los derechos reservados.",
+      rights: "© 2026 LUDEN Co., Ltd. Todos os derechos reservados.",
       compliance: "Corporación Eléctrica Registrada en Japón • Licencia T7010401165137",
       backToTop: "Volver al inicio",
       privacy: "Política de Privacidad",
@@ -261,7 +261,7 @@ export const translations: Record<Language, TranslationSchema> = {
       title: "LUDENが選ばれる 3つの理由",
       subtitle: "確かな法人技術規格 • 東京・神奈川エリア完全責任施工",
       col1Title: "安心の法人組織",
-      col1Text: "株式会社LUDENは、国税庁に登記済みの安心 of 法人組織です（登録番号: T7010401165137）。信頼 of 施工体制、適格請求書（インボイス）の発行、日本の電気安全法令に則った誠実な責任施工をお届けします。",
+      col1Text: "株式会社LUDENは、国税庁に登記済みの安心の法人組織です（登録番号: T7010401165137）。信頼の施工体制、適格請求書（インボイス）の発行、日本の電気安全法令に則った誠実な責任施工をお届けします。",
       col2Title: "東京都港区拠点・機動的な対応",
       col2Text: "東京都港区海岸に本社を置き、港区を中心とした都内近郊、神奈川県内（横浜・川崎など）へ迅速に急行。現場調査や緊急時の点検・電気トラブルにもスピーディに対応いたします。",
       col3Title: "徹底した明瞭会計",
@@ -275,8 +275,8 @@ export const translations: Record<Language, TranslationSchema> = {
     portfolio: {
       titleStart: "施工",
       titleHighlight: "実績",
-      subtitle: "徹底した安全基準と優れた技術力による施工事例ギャラリー",
-      badge: "実際の施工写真",
+      subtitle: "LUDENが手掛けた電気設備工事の事例ギャラリー",
+      badge: "施工ギャラリー",
     },
     about: {
       title: "会社案内",
@@ -339,7 +339,7 @@ export const translations: Record<Language, TranslationSchema> = {
       about: "Sobre Nós",
       contact: "Contato",
       ctaButton: "Solicitar Orçamento",
-      portfolio: "Portfólio",
+      portfolio: "Obras",
     },
     complianceNotice: {
       registered: "Registro Corporativo: N° T7010401165137",
@@ -368,7 +368,7 @@ export const translations: Record<Language, TranslationSchema> = {
       col1Text: "A LUDEN Co., Ltd. é uma empresa de engenharia elétrica legalmente registrada no Japão (N° T7010401165137), garantindo responsabilidade técnica civil, emissão de notas fiscais comerciais e cumprimento de todas as leis elétricas nacionais.",
       col2Title: "Sede em Minato-ku, Tóquio",
       col2Text: "Baseados em Kaigan, Minato-ku, oferecendo grande agilidade no deslocamento, vistorias técnicas pioneiras e visitas rápidas em toda a região de Tóquio e província de Kanagawa.",
-      col3Title: "Transparencia Total",
+      col3Title: "Transparência Total",
       col3Text: "Orçamentos claros e detalhados prévios para obras comerciais ou industriais. Você sabe exatamente o custo de cada etapa e serviço antes de qualquer instalação começar. Sem surpresas.",
     },
     services: {
@@ -377,10 +377,10 @@ export const translations: Record<Language, TranslationSchema> = {
       subtitle: "ESPECIALIDADES TÉCNICAS E SISTEMAS DE ALTO DESEMPENHO",
     },
     portfolio: {
-      titleStart: "Nossos",
-      titleHighlight: "Projetos",
-      subtitle: "GALERIA DE INFRAESTRUTURA REALIZADA COM RIGOR TÉCNICO E EXCELÊNCIA",
-      badge: "FOTOS REAIS DAS NOSSAS OBRAS",
+      titleStart: "Nossas",
+      titleHighlight: "Obras",
+      subtitle: "GALERIA DE OBRAS RECENTES E TRABALHOS EXECUTADOS PELA LUDEN",
+      badge: "GALERIA DE TRABALHOS",
     },
     about: {
       title: "Sobre Nós",
@@ -460,13 +460,13 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
       id: "device-installation",
       title: "Instalación de Equipos y Dispositivos (器具の取り付け)",
       description: "Etapa final de acabado de precisión. Montaje y conexión segura de iluminación, cajas de enchufes, interruptores y reguladores después del panel de yeso/pintura. Incluye el desmontaje seguro de unidades para proyectos de renovación.",
-      image: "https://images.unsplash.com/photo-1565538810844-1e119d81a207?auto=format&fit=crop&w=600&q=80"
+      image: "device_installation.png"
     },
     {
       id: "panel-termination",
       title: "Paneles de Fuerza y Terminales (電力盤結線)",
       description: "Estructuración, peinado y conexión de baja impedancia de alimentadores de distribución principal a tableros y disyuntores, garantizando una disipación de calor limpia, pruebas de torque y un balanceo de carga estructurado.",
-      image: "https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=600&q=80"
+      image: "panel_termination.png"
     },
     {
       id: "cable-racks",
@@ -498,13 +498,13 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
       id: "device-installation",
       title: "器具取り付け・機器設置 (器具の取り付け)",
       description: "内装（壁紙・塗装）フィニッシュ段階での器具付け。トグルスイッチ、高級コンセントプレート、ダウンライト等のミリ単位の傾き・曲がりを排した設置、店舗改装時の安全解体取付を実施します。",
-      image: "https://images.unsplash.com/photo-1565538810844-1e119d81a207?auto=format&fit=crop&w=600&q=80"
+      image: "device_installation.png"
     },
     {
       id: "panel-termination",
       title: "分電盤・動力盤結線処理 (電力盤結線)",
       description: "低圧から高圧幹線受電盤、幹線分配、圧着端子への規定トルクネジ締め、結線ルートの美緻な整線を行い、各サーキットブレーカーへの安全負荷分散接続を保証します。",
-      image: "https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=600&q=80"
+      image: "panel_termination.png"
     },
     {
       id: "cable-racks",
@@ -536,13 +536,13 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
       id: "device-installation",
       title: "Instalação de Equipamentos (器具の取り付け)",
       description: "Fase de acabamento técnico. Realizamos a conexão final e fixação milimétrica de luminárias, tomadas e interruptores após o revestimento das paredes. Também executamos a remoção segura de equipamentos em reformas de escritórios e lojas.",
-      image: "https://images.unsplash.com/photo-1565538810844-1e119d81a207?auto=format&fit=crop&w=600&q=80"
+      image: "device_installation.png"
     },
     {
       id: "panel-termination",
       title: "Fechamento de Quadros de Força (電力盤結線)",
       description: "Montagem, organização e ligação de cabos em quadros de distribuição e painéis de força. Garantimos conexões precisas desde redes convencionais até conexões de alta capacidade para painéis industriais de grande porte.",
-      image: "https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=600&q=80"
+      image: "panel_termination.png"
     },
     {
       id: "cable-racks",
@@ -557,103 +557,104 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
   es: [
     {
       id: "proj-1",
-      title: "Complejo Residencial de Lujo (Minato-ku, Tokio)",
-      category: "Condominios / Departamentos",
-      location: "Tokio",
-      description: "Instalación completa de bandejas portacables (cable racks) para distribución principal, cableado de señales de automatización y acabados de interruptores de alta gama.",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80"
+      title: "Condominios y Residencias de Lujo",
+      category: "Apartamentos",
+      location: "Tokio / Minato-ku",
+      description: "Instalación de luminarias de diseño, cableado interno sofisticado y colocación de placas y apagadores premium.",
+      image: "mansion_wiring.png"
     },
     {
       id: "proj-2",
-      title: "Planta de Manufactura Industrial (Kawasaki, Kanagawa)",
-      category: "Fábrica / Industria",
-      location: "Kanagawa",
-      description: "Tendido de cables troncales (幹線引き) de alta tensión, montaje de subestación interna y balanceo de fases en paneles de fuerza principales.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+      title: "Infraestructura Eléctrica de Fábricas",
+      category: "Industrial",
+      location: "Kawasaki / Kanagawa",
+      description: "Montaje de canalizaciones metálicas (eletrocalhas) y tendido de cableado principal de alta capacidad.",
+      image: "industrial_main.png"
     },
     {
       id: "proj-3",
-      title: "Instalación de Local Comercial (Shibuya, Tokio)",
-      category: "Locales Comerciales / Inquilinos",
-      location: "Tokio",
-      description: "Remodelación del sistema de iluminación LED regulable en oficinas corporativas y salas de servidores, incluyendo el cableado estructurado para equipos críticos.",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+      title: "Reformas de Oficinas y Tiendas",
+      category: "Comercial",
+      location: "Shibuya / Tokio",
+      description: "Adecuación eléctrica de locales comerciales, iluminación decorativa LED y cableado de tomas de piso.",
+      image: "office_interior.png"
     },
     {
       id: "proj-4",
-      title: "Instalaciones Técnicas en Oficinas (Yokohama, Kanagawa)",
-      category: "Oficinas / Empresas",
-      location: "Kanagawa",
-      description: "Cableado de techos y paredes para sistemas de detección de incendios, instalación de tomacorrientes industriales y montaje de tableros secundarios de disyuntores.",
-      image: "https://images.unsplash.com/photo-1565538810844-1e119d81a207?auto=format&fit=crop&w=600&q=80"
+      title: "Montaje de Tableros de Distribución",
+      category: "Distribución",
+      location: "Yokohama / Kanagawa",
+      description: "Conexión técnica de disyuntores, organización y torqueado de líneas de fuerza principales y secundarias.",
+      image: "distribution_board.png"
     }
   ],
   ja: [
     {
       id: "proj-1",
-      title: "都内高級マンション電気工事 (港区海岸)",
-      category: "マンション・集合住宅",
-      location: "東京都",
-      description: "新築マンションにおける幹線ケーブル敷設、天井・壁内二重壁配線、高級ダウンライト・コンセント器具の精密取付け。",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80"
+      title: "高級マンション電気工事",
+      category: "マンション",
+      location: "東京都港区",
+      description: "デザイン照明の取付け、壁内二重壁配線および高級スイッチプレート設置施工。",
+      image: "mansion_wiring.png"
     },
     {
       id: "proj-2",
-      title: "大型製造プラント幹線設備 (川崎市)",
-      category: "工場・工業プラント",
-      location: "神奈川県",
-      description: "工場内における動力高容量幹線ケーブル（動力盤・ブレーカー結線）、メタル製高耐荷重ケーブルラック組み立て・配管敷設施工。",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+      title: "工場内幹線配線・インフラ構築",
+      category: "工業用",
+      location: "神奈川県川崎市",
+      description: "スチール製電線管・高耐荷重ケーブルラックの敷設および大口径幹線引き込み配線施工。",
+      image: "industrial_main.png"
     },
     {
       id: "proj-3",
-      title: "商業テナントオフィス改装 (渋谷区)",
-      category: "テナントビル・オフィス",
-      location: "東京都",
-      description: "オフィス改装に伴う調光機能付きLED照明システム配置設計、サーバー室用専用回路インフラ増設、OAコンセント敷設。",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+      title: "店舗・テナントオフィス改装",
+      category: "店舗・テナント",
+      location: "東京都渋谷区",
+      description: "調光LEDシステムの配置、床用OAコンセントおよびサーバー室増設工事。",
+      image: "office_interior.png"
     },
     {
       id: "proj-4",
-      title: "商業ビルインフラ配管工事 (横浜市)",
-      category: "商業ビル・オフィス",
-      location: "神奈川県",
-      description: "天井内スラブ配管、防災無線・非常照明システム用弱電配線および分電盤盤据付二次端子結線。",
-      image: "https://images.unsplash.com/photo-1565538810844-1e119d81a207?auto=format&fit=crop&w=600&q=80"
+      title: "受配電盤・分電盤結線",
+      category: "電力配電",
+      location: "神奈川県横浜市",
+      description: "サーキットブレーカーの取付、端子台ネジ締め規定トルク管理およびルート整理。",
+      image: "distribution_board.png"
     }
   ],
   pt: [
     {
       id: "proj-1",
-      title: "Condomínio Residencial de Luxo (Minato-ku, Tóquio)",
-      category: "Apartamentos / Condomínios",
-      location: "Tóquio",
-      description: "Infraestrutura completa de eletrocalhas (cable racks) para alimentação de prumadas, passagem de fiação estruturada e acabamento fino de tomadas e interruptores de grife.",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80"
+      title: "Condomínios e Mansões de Luxo",
+      category: "Apartamentos",
+      location: "Tóquio / Minato-ku",
+      description: "Instalação de projetos de iluminação sofisticada, fiação interna e acabamentos refinados de interruptores.",
+      image: "mansion_wiring.png"
     },
     {
       id: "proj-2",
-      title: "Planta Industrial Logística (Kawasaki, Kanagawa)",
-      category: "Fábricas / Indústrias",
-      location: "Kanagawa",
-      description: "Lançamento de cabos de força principal (幹線引き) de alta capacidade, montagem de infraestrutura secundária em perfilados metálicos e testes de torque em disjuntores industriais.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+      title: "Infraestrutura Elétrica de Fábricas",
+      category: "Industrial",
+      location: "Kawasaki / Kanagawa",
+      description: "Montagem de bandejas metálicas suspensas e lançamento de cabos principais de força.",
+      image: "industrial_main.png"
     },
     {
       id: "proj-3",
-      title: "Reforma Comercial de Escritório (Shibuya, Tóquio)",
-      category: "Locais Comerciais / Inquilinos",
-      location: "Tóquio",
-      description: "Instalação de projetos luminotécnicos com fitas de LED dimmerizáveis, organização de cabos em salas de servidores e alimentação de tomadas de piso estruturadas.",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+      title: "Reformas de Escritórios e Lojas",
+      category: "Comercial",
+      location: "Shibuya / Tóquio",
+      description: "Instalação de fitas LED de design, infraestrutura de alimentação de piso e reformas comerciais de inquilinos.",
+      image: "office_interior.png"
     },
     {
       id: "proj-4",
-      title: "Instalação de Sistemas de Automação de Prédio (Yokohama, Kanagawa)",
-      category: "Escritórios / Empresas",
-      location: "Kanagawa",
-      description: "Infraestrutura completa de tubulação em drywall, cabeamento estruturado e fiação interna para sistemas de alarme de incêndio e exaustão mecânica.",
-      image: "https://images.unsplash.com/photo-1565538810844-1e119d81a207?auto=format&fit=crop&w=600&q=80"
+      title: "Montagem de Quadros de Distribuição",
+      category: "Distribuição",
+      location: "Yokohama / Kanagawa",
+      description: "Conexão de disjuntores elétricos, organização e identificação de cabos de força.",
+      image: "distribution_board.png"
     }
   ]
 };
+
