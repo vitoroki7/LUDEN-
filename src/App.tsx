@@ -7,7 +7,7 @@ import DifferenceSection from "./components/DifferenceSection";
 import ContactForm from "./components/ContactForm";
 import ServiceDetailModal from "./components/ServiceDetailModal";
 import { ServiceItem } from "./types";
-import { Language, translations, serviceTranslations } from "./translations";
+import { Language, translations, serviceTranslations, projectTranslations, ProjectTranslation } from "./translations";
 
 export default function App() {
   const [lang, setLang] = useState<Language>("pt"); // Defaulting to PT-BR as preferred by the user prompt
@@ -61,7 +61,7 @@ export default function App() {
             </div>
           </button>
 
-          {/* Center/Right: Navigation Menu: Início | Serviços | Sobre | Contato */}
+          {/* Center/Right: Navigation Menu: Início | Serviços | Portfólio | Sobre | Contato */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8 font-semibold">
             <button
               onClick={scrollToTop}
@@ -74,6 +74,12 @@ export default function App() {
               className="text-slate-400 hover:text-white transition-colors duration-250 cursor-pointer uppercase tracking-wider text-[10px]"
             >
               ⚡ {t.menu.services}
+            </button>
+            <button
+              onClick={() => scrollToSection("portfolio-section")}
+              className="text-slate-400 hover:text-white transition-colors duration-250 cursor-pointer uppercase tracking-wider text-[10px]"
+            >
+              🖼️ {t.menu.portfolio}
             </button>
             <button
               onClick={() => scrollToSection("about-section")}
@@ -296,7 +302,85 @@ export default function App() {
         </div>
       </section>
 
-      {/* 5. SEÇÃO SOBRE MIM / A EMPRESA (Gera conexão) */}
+      {/* 5. PORTFÓLIO (Obras Recentes / Galeria de Projetos) */}
+      <section className="relative py-24 px-4 bg-white border-b border-slate-205" id="portfolio-section">
+        <div className="max-w-6xl mx-auto">
+          
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-3.5 py-1 bg-brand-blue-50 border border-brand-blue-100 rounded-full text-[10px] font-mono font-bold text-brand-blue-700 uppercase tracking-widest text-center"
+            >
+              <span>{t.portfolio.badge}</span>
+            </motion.div>
+            
+            <motion.h2
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="font-display font-bold text-3xl md:text-4xl text-slate-900 tracking-tight"
+            >
+              {t.portfolio.titleStart} <span className="text-brand-blue-600">{t.portfolio.titleHighlight}</span>
+            </motion.h2>
+            <p className="font-sans text-[10px] text-slate-400 uppercase tracking-widest font-bold">
+              {t.portfolio.subtitle}
+            </p>
+          </div>
+
+          {/* Grid layout of projects */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {projectTranslations[lang].map((project) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ y: -4 }}
+                className="group relative bg-slate-50 border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-brand-blue-500/30 transition-all duration-300 h-full"
+              >
+                {/* Image Section with Overlay details */}
+                <div className="relative w-full h-64 overflow-hidden bg-slate-150">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* Category and location tags on top of image */}
+                  <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-slate-950/80 backdrop-blur-md text-[9px] font-mono text-amber-400 font-bold uppercase tracking-wider rounded-full border border-amber-400/25">
+                      📍 {project.location}
+                    </span>
+                    <span className="px-3 py-1 bg-slate-950/80 backdrop-blur-md text-[9px] font-mono text-white font-bold uppercase tracking-wider rounded-full border border-slate-800">
+                      ⚡ {project.category}
+                    </span>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-80" />
+                </div>
+
+                {/* Text Description */}
+                <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                  <div className="space-y-2">
+                    <h3 className="font-display font-black text-lg text-slate-900 group-hover:text-brand-blue-600 transition-colors duration-200">
+                      {project.title}
+                    </h3>
+                    <p className="font-sans text-xs text-slate-500 leading-relaxed font-light">
+                      {project.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 6. SEÇÃO SOBRE MIM / A EMPRESA (Gera conexão) */}
       <section className="relative py-24 px-4 bg-white border-b border-slate-205" id="about-section">
         {/* Technical overlay grid background */}
         <div className="absolute inset-0 tech-blueprint-grid opacity-15 pointer-events-none" />
@@ -454,6 +538,9 @@ export default function App() {
             <div className="pt-3 flex flex-col gap-2 font-bold text-[10px] uppercase text-amber-500">
               <button onClick={scrollToTop} className="text-left hover:underline transition-all cursor-pointer bg-transparent border-none p-0">
                 ↑ {t.footer.backToTop}
+              </button>
+              <button onClick={() => scrollToSection("portfolio-section")} className="text-left hover:underline transition-all cursor-pointer bg-transparent border-none p-0">
+                🖼️ {t.menu.portfolio}
               </button>
               <button onClick={() => alert(lang === "pt" ? "Política de Privacidade do site LUDEN: Seus dados estão completamente seguros." : lang === "ja" ? "プライバシーポリシー：お客様の個人情報は安全に管理されています。" : "Política de Privacidad de LUDEN: Sus datos están completamente seguros.")} className="text-left hover:underline transition-all cursor-pointer bg-transparent border-none p-0">
                 🔒 {t.footer.privacy}
