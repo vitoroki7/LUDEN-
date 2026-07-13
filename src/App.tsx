@@ -10,7 +10,7 @@ import { ServiceItem } from "./types";
 import { Language, translations, serviceTranslations, projectTranslations, ProjectTranslation } from "./translations";
 
 export default function App() {
-  const [lang, setLang] = useState<Language>("pt"); // Defaulting to PT-BR as preferred by the user prompt
+  const [lang, setLang] = useState<Language>("ja"); // Defaulting to Japanese (ja) as preferred by the user
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
