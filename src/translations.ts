@@ -14,6 +14,7 @@ export interface ProjectTranslation {
   location: string;
   description: string;
   image: string;
+  scope: string[];
 }
 
 export interface TranslationSchema {
@@ -509,7 +510,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     {
       id: "cable-racks",
       title: "ケーブルラック・盤据付 (ケーブルラック・盤の取り付け)",
-      description: "ビルや大型店舗の天井部に支持用の全アンカー吊り具を取付け、重量ケーブル群を格納誘導する鋼製・アルミ製ラックの組み立て。頑固な分電盤ボックス本体の物理的固定を含みます。",
+      description: "ビルや大型店舗の天井部に支持用の全アンカー吊り具を取付け、重量ケーブル群を格納誘導する鋼製・アルミ製ラックの組み立て。頑固な分電盤ボックス本体 of 物理的固定を含みます。",
       image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80"
     }
   ],
@@ -560,48 +561,84 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
       title: "Instalación Externa de Prumadas",
       category: "Infraestructura",
       location: "Tokio / Minato-ku",
-      description: "Uso de plataforma elevadora para tendido de cableado exterior de alta tensión.",
-      image: "work_1.jpg"
+      description: "Tendido, soporte y fijación aérea de cables alimentadores principales de alta capacidad y prumadas de distribución externa en fachadas comerciales.",
+      image: "work_1.jpg",
+      scope: [
+        "Voltaje: Trifásico 200V / 400V",
+        "Conductores: Cable CV 8sq / 14sq",
+        "Equipo: Elevadora Nishio",
+        "Padrão: Conformidad DENAN"
+      ]
     },
     {
       id: "proj-2",
       title: "Tableros de Bomberos y Alarmas",
       category: "Sistemas",
       location: "Yokohama / Kanagawa",
-      description: "Conexión técnica del tablero principal de bombas contra incendios de emergencia.",
-      image: "work_2.png"
+      description: "Peinado, torqueado y conexionado técnico de disyuntores de protección en el cuadro de control eléctrico principal para bombas de hidrantes.",
+      image: "work_2.png",
+      scope: [
+        "Tablero: Disyuntores y SPD",
+        "Torque: Calibrado JIS C 2805",
+        "Cables: Doble aislamiento",
+        "Seguridad: 100% Homologado"
+      ]
     },
     {
       id: "proj-3",
       title: "Iluminación Vial y de Áreas Comunes",
       category: "Iluminación",
       location: "Kawasaki / Kanagawa",
-      description: "Mantenimiento y colocación de reflectores y luminarias públicas LED en altura.",
-      image: "work_3.jpg"
+      description: "Retrofit completo a tecnología LED de alta potencia en reflectores y postes de iluminación en zonas de tránsito y estacionamientos externos.",
+      image: "work_3.jpg",
+      scope: [
+        "Luminarias: LED IP66 Exterior",
+        "Sensores: Fotocélula integrados",
+        "Altura: 8 a 10 metros",
+        "Ahorro: 60% Consumo Activo"
+      ]
     },
     {
       id: "proj-4",
       title: "Canalizaciones Metálicas e Infraestructura",
       category: "Infraestructura",
       location: "Shibuya / Tokio",
-      description: "Paso de conductos corrugados metálicos flexibles y fijación de soportes en drywall.",
-      image: "work_4.png"
+      description: "Tendido de tuberías metálicas corrugadas flexibles y paso de cables de fuerza y control en el interior de tabiques de drywall.",
+      image: "work_4.png",
+      scope: [
+        "Conductos: Metal flexible (FMS)",
+        "Accesorios: Conexiones de latón",
+        "Líneas: Aislamiento fuerza/señal",
+        "Norma: Reglamento de Japón"
+      ]
     },
     {
       id: "proj-5",
       title: "Infraestructura Industrial de Cableado",
       category: "Industrial",
       location: "Kawasaki / Kanagawa",
-      description: "Montaje de canalizaciones metálicas y tendido de cableado principal.",
-      image: "work_5.png"
+      description: "Montaje de canalizaciones metálicas suspendidas pesadas para distribución de cables de fuerza en galpón logístico comercial.",
+      image: "work_5.png",
+      scope: [
+        "Soportes: Acero galvanizado pesado",
+        "Distribución: Rota aérea limpia",
+        "Carga Máxima: 120 kg/metro",
+        "Uso: Fábricas y almacenes"
+      ]
     },
     {
       id: "proj-6",
       title: "Instalación de Dispositivos de Diseño",
       category: "Comercial",
       location: "Tokio / Minato-ku",
-      description: "Instalación y conexión de placas de apagadores y enchufes.",
-      image: "work_6.png"
+      description: "Instalación final, conexionado y nivelación milimétrica a láser de apagadores, tomacorrientes y redes Cat6 en oficinas de alto estándar.",
+      image: "work_6.png",
+      scope: [
+        "Diseño: Placas mate premium",
+        "Pruebas: Continuidad e isolación",
+        "Red: RJ45 Cat6 blindados",
+        "Alineación: Nivelación a láser"
+      ]
     }
   ],
   ja: [
@@ -610,48 +647,84 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
       title: "高所作業車幹線配線工事",
       category: "インフラ",
       location: "東京都港区",
-      description: "高所作業用リフトを使用した外部幹線および引込配線の敷設整備。",
-      image: "work_1.jpg"
+      description: "商業ビルの外壁部における幹線ケーブル敷設および強靭な支持ルートの構築。高所リフトを用いた安全施工。",
+      image: "work_1.jpg",
+      scope: [
+        "電圧: 三相 200V / 400V",
+        "使用電線: 幹線 CV 8sq / 14sq",
+        "高所機械: 西尾レントオール高所リフト",
+        "安全規格: 電気用品安全法（DENAN）適合"
+      ]
     },
     {
       id: "proj-2",
       title: "消火ポンプ・消火用結線盤",
       category: "防災設備",
       location: "神奈川県横浜市",
-      description: "非常用消火ポンプの電力制御盤の結線、圧着端子締結・安全点検。",
-      image: "work_2.png"
+      description: "非常用消火用動力ポンプ制御盤内の二次端子圧着、整線、規定トルクによるネジ締め管理と受電試験の実施。",
+      image: "work_2.png",
+      scope: [
+        "動力盤: 避雷器（SPD）搭載保護盤",
+        "締付管理: JIS C 2805 規定トルク締付",
+        "配線: 耐熱・難燃二重シース仕様",
+        "点検: 消防検査適合・受電試験実施済"
+      ]
     },
     {
       id: "proj-3",
       title: "高所街路灯LED化整備",
       category: "屋外照明",
       location: "神奈川県川崎市",
-      description: "高所作業車を活用した屋外街路灯の改修およびLED照明器具交換工事。",
-      image: "work_3.jpg"
+      description: "高所作業車を活用した街路灯・駐車場照明の水銀灯撤去および省エネ防水LED灯具へのリニューアル工事。",
+      image: "work_3.jpg",
+      scope: [
+        "照明器具: 高効率防水LED IP66",
+        "自動制御: 光電センサー自動点滅器連動",
+        "高所作業: 屈折式高所リフト作業（8〜10m）",
+        "効果: 消費電力約60%削減（水銀灯比）"
+      ]
     },
     {
       id: "proj-4",
       title: "フレーム内二重壁金属配管",
       category: "配管インフラ",
       location: "東京都渋谷区",
-      description: "間仕切りフレーム内におけるフレキシブル金属電線管の敷設および接続。",
-      image: "work_4.png"
+      description: "オフィス間仕切りLGSフレーム内におけるフレキシブル金属電線管（プリカ）の曲げ配管および接地ボンド施工。",
+      image: "work_4.png",
+      scope: [
+        "保護管: 二種金属製可とう電線管（プリカ）",
+        "コネクタ: 接地ボンド付き亜鉛合金",
+        "離隔要件: 弱電・強電の法令遵守離隔",
+        "適合規程: 内線規程・電気設備技術基準"
+      ]
     },
     {
       id: "proj-5",
       title: "工場内動力幹線設備",
       category: "工業用",
       location: "神奈川県川崎市",
-      description: "高耐荷重ケーブルラックの組み立てと配管・配線。",
-      image: "work_5.png"
+      description: "倉庫・工場内の天井部における吊り全ネジ及び重量級金属製ケーブルラックの組み立てと強電幹線誘導配線。",
+      image: "work_5.png",
+      scope: [
+        "支持金物: 溶融亜鉛めっき製重量ラック",
+        "配線整理: 系統別仕切り板による整線布設",
+        "耐荷重: 設計荷重最大120kg/m対応",
+        "用途: 動力・制御用大容量メタルラック"
+      ]
     },
     {
       id: "proj-6",
-      title: "コンクリート・スイッチ器具設置",
+      title: "コンセント・スイッチ器具設置",
       category: "店舗・テナント",
       location: "東京都港区",
-      description: "デザインスイッチおよび高機能コンセントの精密取付け。",
-      image: "work_6.png"
+      description: "ハイエンドオフィス改装時の最終仕上がり工程。レーザー墨出し器によるミリ単位プレート水平垂直設置および検電確認。",
+      image: "work_6.png",
+      scope: [
+        "デザイン: 艶消しマット仕上プレート",
+        "検証: 絶縁抵抗試験・極性確認検電",
+        "LAN用コネクタ: CAT6シールド付き端子",
+        "取付精度: レーザー墨出し器による設置"
+      ]
     }
   ],
   pt: [
@@ -660,48 +733,84 @@ export const projectTranslations: Record<Language, ProjectTranslation[]> = {
       title: "Instalação Externa de Prumadas",
       category: "Infraestrutura",
       location: "Tóquio / Minato-ku",
-      description: "Uso de plataforma elevatória para fiação externa e prumadas de alta capacidade.",
-      image: "work_1.jpg"
+      description: "Passagem, fixação aérea e roteamento de cabos alimentadores principais em fachadas comerciais para distribuição de energia.",
+      image: "work_1.jpg",
+      scope: [
+        "Voltagem: Trifásico 200V / 400V",
+        "Cabos: CV 8sq / CV 14sq",
+        "Equipamento: Plataforma Elevatória Nishio",
+        "Padrão: Conformidade Técnica DENAN"
+      ]
     },
     {
       id: "proj-2",
       title: "Fechamento de Quadro de Hidrantes",
       category: "Sistemas",
       location: "Yokohama / Kanagawa",
-      description: "Conexão de quadro elétrico principal de bombas de hidrantes e alarmes.",
-      image: "work_2.png"
+      description: "Organização interna, torqueamento dos conectores e fechamento do quadro de comando das bombas de hidrantes e alarmes.",
+      image: "work_2.png",
+      scope: [
+        "Quadros: Disjuntores e DPS integrados",
+        "Torque: Calibrado padrão JIS C 2805",
+        "Cabos: Antichama com dupla isolação",
+        "Segurança: Testado e homologado"
+      ]
     },
     {
       id: "proj-3",
       title: "Manutenção de Iluminação Pública",
       category: "Iluminação",
       location: "Kawasaki / Kanagawa",
-      description: "Substituição e instalação de novas luminárias de LED públicas externas em altura.",
-      image: "work_3.jpg"
+      description: "Substituição de antigas luminárias de descarga por tecnologia LED moderna de alta potência em áreas de trânsito externo.",
+      image: "work_3.jpg",
+      scope: [
+        "Luminárias: Projetores LED IP66",
+        "Automação: Fotocélula integrada",
+        "Altura de Trabalho: 8 a 10 metros",
+        "Economia: Redução de 60% no consumo"
+      ]
     },
     {
       id: "proj-4",
       title: "Tubulações Metálicas em Drywall",
       category: "Infraestrutura",
       location: "Shibuya / Tóquio",
-      description: "Passagem de conduítes metálicos flexíveis e fixação de suportes metálicos.",
-      image: "work_4.png"
+      description: "Instalação de eletrodutos metálicos flexíveis e passagem de cabos de força em estruturas de gesso acartonado.",
+      image: "work_4.png",
+      scope: [
+        "Conduítes: Eletrodutos flexíveis metálicos",
+        "Conectores: Latão com aterramento",
+        "Fiação: Separação de redes força/sinal",
+        "Regulação: Normas técnicas de energia"
+      ]
     },
     {
       id: "proj-5",
       title: "Infraestrutura Industrial de Cabos",
       category: "Industrial",
       location: "Kawasaki / Kanagawa",
-      description: "Montagem de eletrocalhas industriais e lançamento de cabos.",
-      image: "work_5.png"
+      description: "Instalação de rotas elevadas de eletrocalhas metálicas para suporte de circuitos elétricos industriais em galpão logístico.",
+      image: "work_5.png",
+      scope: [
+        "Suportes: Aço galvanizado robusto",
+        "Distribuição: Rota suspensa organizada",
+        "Capacidade: Até 120 kg de cabos/metro",
+        "Aplicação: Galpões e indústrias"
+      ]
     },
     {
       id: "proj-6",
       title: "Instalação de Tomadas e Interruptores",
       category: "Comercial",
       location: "Tóquio / Minato-ku",
-      description: "Acabamento elétrico fino de tomadas de design.",
-      image: "work_6.png"
+      description: "Fixação milimétrica, testes de polaridade e isolamento em interruptores e tomadas de embutir de design em escritórios corporativos.",
+      image: "work_6.png",
+      scope: [
+        "Design: Placas minimalistas premium",
+        "Testes: Isolamento e aterramento",
+        "Rede: RJ45 Cat6 blindados para TI",
+        "Acabamento: Nivelamento a laser"
+      ]
     }
   ]
 };

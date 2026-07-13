@@ -6,6 +6,7 @@ import ServiceCard from "./components/ServiceCard";
 import DifferenceSection from "./components/DifferenceSection";
 import ContactForm from "./components/ContactForm";
 import ServiceDetailModal from "./components/ServiceDetailModal";
+import ProjectDetailModal from "./components/ProjectDetailModal";
 import { ServiceItem } from "./types";
 import { Language, translations, serviceTranslations, projectTranslations, ProjectTranslation } from "./translations";
 
@@ -13,6 +14,8 @@ export default function App() {
   const [lang, setLang] = useState<Language>("ja"); // Defaulting to Japanese (ja) as preferred by the user
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<ProjectTranslation | null>(null);
+  const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
 
   const t = translations[lang];
 
@@ -340,7 +343,11 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 whileHover={{ y: -4 }}
-                className="group relative bg-slate-50 border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-brand-blue-500/30 transition-all duration-300 h-full"
+                onClick={() => {
+                  setSelectedProject(project);
+                  setIsProjectModalOpen(true);
+                }}
+                className="group relative bg-slate-50 border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-brand-blue-500/30 transition-all duration-300 h-full cursor-pointer"
               >
                 {/* Image Section with Overlay details */}
                 <div className="relative w-full h-64 overflow-hidden bg-slate-150">
@@ -371,6 +378,12 @@ export default function App() {
                     <p className="font-sans text-xs text-slate-500 leading-relaxed font-light">
                       {project.description}
                     </p>
+                  </div>
+                  
+                  {/* View Details Link */}
+                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-brand-blue-600 font-mono tracking-wider uppercase font-bold group-hover:text-brand-blue-700">
+                    <span>{lang === 'ja' ? '詳細データ表示' : lang === 'es' ? 'Ver Especificaciones' : 'Ver Detalhes'}</span>
+                    <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
                   </div>
                 </div>
               </motion.div>
@@ -562,6 +575,14 @@ export default function App() {
         service={selectedService}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+        lang={lang}
+      />
+
+      {/* Dynamic Project/Case Study popup modal */}
+      <ProjectDetailModal
+        project={selectedProject}
+        isOpen={isProjectModalOpen}
+        onClose={() => setIsProjectModalOpen(false)}
         lang={lang}
       />
 
