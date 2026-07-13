@@ -141,13 +141,13 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       badge: "EXCLUSIVIDAD LUDEN • INGENIERÍA ELÉCTRICA PROFESIONAL EN JAPÓN",
-      directives: "DIRECTRICES PARA APARTAMENTOS, FÁBRICAS Y LOCALES COMERCIALES",
+      directives: "DIRECTRICES PARA FÁBRICAS, LOCALES COMERCIALES Y APOYO TÉCNICO (応援)",
       engineeringBadge: "CONTRATISTA ELÉCTRICO LICENCIADO EN TOKIO, JAPÓN",
       headlineStart: "Soluciones Eléctricas Seguras y de",
-      headlineHighlight: "Alto Rendimiento para Empresas y Condominios",
+      headlineHighlight: "Alto Rendimiento para Fábricas, Locales y Apoyo (Ouen)",
       headlineEnd: "",
       tier: "Experiencia, Seguridad y Cumplimiento de Plazos",
-      subtitle: "Servicio técnico especializado y transparente enfocado en su seguridad y estabilidad energética, operando en Tokio, Kanagawa y áreas vecinas.",
+      subtitle: "Servicio de ingeniería eléctrica para fábricas y locales comerciales. También ofrecemos apoyo de personal técnico calificado (Ouen/常用・応援) para otros contratistas en Tokio y Kanagawa.",
       ctaButton: "Solicitar Presupuesto Gratis",
       ctaSecondary: "Nuestros Servicios",
       ctaNote: "Diagnósticos técnicos rápidos programados con total claridad",
@@ -161,7 +161,7 @@ export const translations: Record<Language, TranslationSchema> = {
       col2Title: "Sede en Minato-ku, Tokio",
       col2Text: "Con sede en Kaigan, Minato-ku, lo que nos permite un despliegue ágil, tiempos de respuesta rápidos y visitas técnicas prioritarias en toda el área metropolitana de Tokio y la prefectura de Kanagawa.",
       col3Title: "Transparencia del 100%",
-      col3Text: "Ofrecemos presupuestos detallados y desglosados de antemano para proyectos comerciales e industriales de cualquier escala. Sabrá exactamente los costos antes de iniciar la instalación. Sin sorpresas.",
+      col3Text: "Ofrecemos presupuestos detallados para proyectos comerciales e industriales, además de tarifas diarias claras y desglosadas para soporte técnico y subcontratación (Ouen). Sin sorpresas.",
     },
     services: {
       titleStart: "Especialidades",
@@ -176,13 +176,13 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     about: {
       title: "Sobre Nosotros",
-      text: "LUDEN Co., Ltd. (representada por Luis Matsuoka) es una empresa de ingeniería eléctrica con sede en Minato-ku, Tokio. Nos especializamos en el diseño, instalación y mantenimiento de infraestructura eléctrica para condominios (apartamentos), fábricas y locales comerciales (inquilinos), además de obras de interiores. Nos comprometemos a entregar solutions de alta fidelidad que garanticen la máxima seguridad, eficiencia energética y durabilidad de las instalaciones.",
+      text: "LUDEN Co., Ltd. (representada por Luis Matsuoka) es una empresa de ingeniería eléctrica con sede en Minato-ku, Tokio. Nos especializamos en el diseño, instalación y mantenimiento de infraestructura eléctrica para fábricas, locales comerciales (inquilinos) y obras de interiores. También ofrecemos apoyo de personal técnico calificado (Ouen/人工) para colaborar con otras empresas y contratistas del sector.",
       tagline: "LUDEN INGENIERÍA • SOPORTE MULTILINGÜE DISPONIBLE EN PORTUGUÉS, JAPONÉS Y ESPAÑOL",
     },
     contact: {
       titleStart: "Solicite su",
       titleHighlight: "Presupuesto",
-      subtitle: "Envíe un mensaje para solicitar una cita de diagnóstico técnico o cotización para su condominio, fábrica o local comercial",
+      subtitle: "Envíe un mensaje para cotizar proyectos comerciales/industriales o solicitar servicios de apoyo técnico de subcontratación (Ouen)",
       hotline: "Línea Directa (Representante)",
       division: "Correo Electrónico Corporativo",
       consultation: "Área de Cobertura Principal",
@@ -197,7 +197,7 @@ export const translations: Record<Language, TranslationSchema> = {
       labelEmail: "Correo Electrónico",
       placeholderEmail: "Ejemplo: contacto@luden-ele.com",
       labelMessage: "Detalles del Proyecto y Servicios Solicitados",
-      placeholderMessage: "Describa la instalación o renovación que necesita (ej. bandejas portacables, actualización de tableros de disyuntores, tendido de cables principales, remodelación de oficinas, etc.)...",
+      placeholderMessage: "Describa la instalación o servicio que necesita (ej. tendido de cables principales, remodelación de oficinas, soporte técnico/応援, etc.)...",
       transmitting: "Transmitiendo a Luis Matsuoka...",
       transmitButton: "Enviar Solicitud de Presupuesto",
       successTitle: "Solicitud de Presupuesto Registrada",
@@ -227,7 +227,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
   },
   ja: {
-    brandTagline: "電気設備設計工事 ・ マンション・工場・テナント電気工事",
+    brandTagline: "電気設備設計工事 ・ 工場・テナント電気工事（常用・応援対応）",
     menu: {
       home: "ホーム",
       services: "施工技能",
@@ -245,13 +245,13 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       badge: "LUDENクオリティ • 安全第一主義電気施工",
-      directives: "マンション・工場・テナント設備設計施工",
+      directives: "工場・テナント設備設計施工（応援・人工対応）",
       engineeringBadge: "株式会社LUDEN ・ 東京都港区拠点",
-      headlineStart: "マンションや工場の、安全で高品質な",
+      headlineStart: "工場やテナントビルの、安全で高品質な",
       headlineHighlight: "電気設備工事ソリューションを提供",
       headlineEnd: "",
       tier: "専門知識・徹底された透明性・完璧な施工品質",
-      subtitle: "東京都港区を拠点に、マンション、工場、テナントビル等の電気設備工事・内装工事を施工。安全性と安定供給に特化した技術パートナー。",
+      subtitle: "東京都港区を拠点に、工場、商業テナントビル等の電気設備工事・内装工事を施工。他社現場への常用・応援対応（人工対応）も柔軟に対応いたします。",
       ctaButton: "無料お見積りを依頼する",
       ctaSecondary: "提供サービスを見る",
       ctaNote: "出張現地調査や見積もり相談は完全無料にて承ります",
@@ -265,7 +265,7 @@ export const translations: Record<Language, TranslationSchema> = {
       col2Title: "東京都港区拠点・機動的な対応",
       col2Text: "東京都港区海岸に本社を置き、港区を中心とした都内近郊、神奈川県内（横浜・川崎など）へ迅速に急行。現場調査や緊急時の点検・電気トラブルにもスピーディに対応いたします。",
       col3Title: "徹底した明瞭会計",
-      col3Text: "事前現場調査に基づき、マンション改修、工場設備、テナント改装等の精確な御見積書をご提示。法人案件における明瞭な予算管理をサポートいたします。",
+      col3Text: "事前現場調査に基づき、工場設備、テナント改装等の精確な御見積書をご提示。また、他社応援の常用・人工単価のご相談にもクリアにお応えします。",
     },
     services: {
       titleStart: "確かな施工",
@@ -280,13 +280,13 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     about: {
       title: "会社案内",
-      text: "株式会社LUDEN（代表取締役 松岡ルイス）は、東京都港区に拠点を置く電気工事の専門集団です。マンション、工場、商業テナント施設などの電気設備工事および店舗等の内装工事を主力業務としており、東京都や神奈川県エリアを中心に活動しています。確かな技術力と法令遵守の姿勢で、長きにわたり安全で効率的なインフラ環境を構築いたします。",
+      text: "株式会社LUDEN（代表取締役 松岡ルイス）は、東京都港区に拠点を置く電気工事の専門集団です。工場、商業テナント施設などの電気設備工事および店舗等の内装工事を主力業務としており、東京都や神奈川県エリアを中心に活動しています。また、繁忙期の常用・応援対応（人工出し）にもスピーディに対応。確かな技術力でプロジェクトを支えます。",
       tagline: "株式会社LUDEN • 日本語、ポルトガル語、スペイン語でのシームレスなコミュニケーションに対応",
     },
     contact: {
       titleStart: "お見積り・",
       titleHighlight: "工事のご相談",
-      subtitle: "マンション改修、工場電気設備、テナント内装工事のお見積りや現地調査のご相談など、お気軽にお問い合わせください",
+      subtitle: "工場電気設備、テナント内装工事、他社現場への常用・応援対応のご依頼など、お気軽にお問い合わせください",
       hotline: "代表直通電話",
       division: "公式メールアドレス",
       consultation: "主な対応エリア",
@@ -301,7 +301,7 @@ export const translations: Record<Language, TranslationSchema> = {
       labelEmail: "メールアドレス",
       placeholderEmail: "例: yamada@luden-ele.com",
       labelMessage: "工事内容・ご相談の詳細",
-      placeholderMessage: "工事の具体的な箇所やご要望（例: 幹線引き込み、分電盤・ブレーカー結線、スラブ内配管、テナント内装照明、オフィス改修等）をご自由にご記入ください...",
+      placeholderMessage: "工事の具体的な箇所やご要望（例: 幹線引き込み、分電盤・ブレーカー結線、スラブ内配管、テナント内装照明、応援対応等）をご自由にご記入ください...",
       transmitting: "松岡ルイス宛へ送信中...",
       transmitButton: "お問い合わせ内容を送信する",
       successTitle: "送信が完了いたしました",
@@ -349,13 +349,13 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     hero: {
       badge: "EXCLUSIVIDADE LUDEN • ENGENHARIA ELÉTRICA PROFISSIONAL NO JAPÃO",
-      directives: "DIRETRIZES DE ENERGIA PARA APARTAMENTOS, FÁBRICAS E COMÉRCIO",
+      directives: "DIRETRIZES DE ENERGIA PARA FÁBRICAS, COMÉRCIO E SUPORTE TÉCNICO (応援)",
       engineeringBadge: "EMPRESA ELÉTRICA REGISTRADA E LICENCIADA EM TÓQUIO",
       headlineStart: "Instalações Elétricas de",
-      headlineHighlight: "Alto Desempenho para Empresas e Condomínios",
+      headlineHighlight: "Alto Desempenho para Fábricas, Comércio e Apoio (Ouen)",
       headlineEnd: "",
       tier: "Presteza, Segurança e Transparência no Atendimento",
-      subtitle: "Serviço técnico de engenharia focado em segurança e estabilidade energética, atendendo diretamente a Tóquio, Kanagawa e áreas vizinhas.",
+      subtitle: "Serviço técnico de engenharia focado em segurança e estabilidade. Atendemos a fábricas, comércios e oferecemos suporte de pessoal técnico (Ouen) para parceiros em Tóquio e Kanagawa.",
       ctaButton: "Solicitar Orçamento Gratuito",
       ctaSecondary: "Conhecer Nossos Serviços",
       ctaNote: "Consultas técnicas agendadas rapidamente com total clareza",
@@ -369,7 +369,7 @@ export const translations: Record<Language, TranslationSchema> = {
       col2Title: "Sede em Minato-ku, Tóquio",
       col2Text: "Baseados em Kaigan, Minato-ku, oferecendo grande agilidade no deslocamento, vistorias técnicas pioneiras e visitas rápidas em toda a região de Tóquio e província de Kanagawa.",
       col3Title: "Transparência Total",
-      col3Text: "Orçamentos claros e detalhados prévios para obras comerciais ou industriais. Você sabe exatamente o custo de cada etapa e serviço antes de qualquer instalação começar. Sem surpresas.",
+      col3Text: "Orçamentos prévios detalhados para obras comerciais ou industriais, além de custos claros de diárias para suporte técnico e subcontratação (Ouen). Sem surpresas.",
     },
     services: {
       titleStart: "Nossos",
@@ -384,13 +384,13 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     about: {
       title: "Sobre Nós",
-      text: "A LUDEN Co., Ltd. (representada por Luis Matsuoka) é uma empresa de engenharia elétrica com sede em Minato-ku, Tóquio. Especializamo-nos no projeto, instalação e manutenção de infraestrutura elétrica para condomínios (apartamentos), fábricas e estabelecimentos comerciais (inquilinos), além de reformas de interiores. Nosso compromisso é entregar soluções de alta fidelidade que garantam segurança operacional, eficiência de consumo e máxima durabilidade.",
+      text: "A LUDEN Co., Ltd. (representada por Luis Matsuoka) é uma empresa de engenharia elétrica com sede em Minato-ku, Tóquio. Especializamo-nos no projeto, instalação e manutenção de infraestrutura elétrica para fábricas, estabelecimentos comerciais (inquilinos) e reformas de interiores. Também oferecemos suporte técnico sob demanda (Ouen/人工) para parceiros do setor, prestando serviços de altíssima qualidade técnica.",
       tagline: "LUDEN ENGENHARIA • SUPORTE EXCLUSIVO EM PORTUGUÊS, JAPONÊS E ESPANHOL PARA SUA COMODIDADE",
     },
     contact: {
       titleStart: "Solicite seu",
       titleHighlight: "Orçamento",
-      subtitle: "Entre em contato para agendar uma vistoria técnica ou orçamento para seu condomínio, fábrica ou estabelecimento comercial",
+      subtitle: "Entre em contato para orçamentos de projetos industriais/comerciais ou para solicitar suporte técnico e diárias de subcontratação (Ouen)",
       hotline: "Linha Direta (Representante)",
       division: "E-mail Corporativo",
       consultation: "Área de Cobertura Principal",
@@ -405,7 +405,7 @@ export const translations: Record<Language, TranslationSchema> = {
       labelEmail: "E-mail Corporativo de Contato",
       placeholderEmail: "Ex: contato@luden-ele.com",
       labelMessage: "O que você precisa fazer no seu imóvel?",
-      placeholderMessage: "Descreva os detalhes do serviço (ex: passagem de cabos tronco, fechamento de quadro de força, tubulações em lajes, reforma de escritórios, infraestrutura para inquilinos, etc.)...",
+      placeholderMessage: "Descreva os detalhes do serviço (ex: passagem de cabos tronco, fechamento de quadro de força, tubulações em lajes, reforma de escritórios, suporte técnico/応援, etc.)...",
       transmitting: "Enviando seus detalhes para Luis Matsuoka...",
       transmitButton: "Enviar Solicitação de Orçamento",
       successTitle: "Solicitação Enviada com Sucesso!",
@@ -447,7 +447,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     {
       id: "concrete-slab",
       title: "Tubería y Cableado en Losas (スラブ配管・配線)",
-      description: "Instalación estratégica de tuberías y conductos empotrados en cimientos de hormigón crudo. Preparación de la infraestructura central para nuevas construcciones, sirviendo a apartamentos, almacenes y fábricas.",
+      description: "Instalación estratégica de tuberías y conductos empotrados en cimientos de hormigón crudo. Preparación de la infraestructura central para almacenes, locales comerciales y fábricas.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -485,7 +485,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     {
       id: "concrete-slab",
       title: "コンクリートスラブ配管工事 (スラブ配管・配線)",
-      description: "マンション・ビル・倉庫の生コンクリート打設前の鉄筋組に、PF管やCD管などの埋込電線管を戦略的に配管・立ち上げ固定を行い、構造体一体の下地施工を頑強に実施します。",
+      description: "ビル・倉庫・店舗の生コンクリート打設前の鉄筋組に、PF管やCD管などの埋込電線管を戦略的に配管・立ち上げ固定を行い、構造体一体の下地施工を頑強に実施します。",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -523,7 +523,7 @@ export const serviceTranslations: Record<Language, ServiceTranslation[]> = {
     {
       id: "concrete-slab",
       title: "Tubulação e Fiação em Lajes (スラブ配管・配線)",
-      description: "Instalação estratégica de tubulações e conduítes embutidos em fundações de concreto. Preparamos a infraestrutura base para novas construções, atendendo apartamentos, condomínios, galpões e instalações de fábricas.",
+      description: "Instalação estratégica de tubulações e conduítes embutidos em fundações de concreto. Preparamos a infraestrutura base para novas construções, atendendo galpões, comércios e instalações de fábricas.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
     },
     {
